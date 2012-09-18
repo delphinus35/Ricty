@@ -38,8 +38,8 @@ ricty_familyname="Ricty"
 ricty_addfamilyname=""
 
 # set ascent and descent (line width parameters)
-ricty_ascent=835
-ricty_descent=215
+ricty_ascent=640
+ricty_descent=160
 
 # set bold width of ASCII glyphs
 ascii_regular_width=0
@@ -370,8 +370,8 @@ i = 0; while (i < SizeOf(input_list))
     ClearInstrs(); UnlinkReference()
     if ("$scaling_down_flag" == "true")
         Print("While scaling " + input_list[i]:t + ", wait a little...")
-        SetWidth(-1, 1); Scale(91, 91, 0, 0); SetWidth(110, 2); SetWidth(1, 1)
-        Move(23, 0); SetWidth(-23, 1)
+        SetWidth(-1, 1); Scale(75); SetWidth(1, 1)
+        Move(-130, -100)
     endif
     RoundToInt(); RemoveOverlap(); RoundToInt()
     # save modified Migu 1M
